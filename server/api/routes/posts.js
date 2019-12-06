@@ -3,8 +3,8 @@ const mongodb = require('mongodb');
 const router = express.Router();
 
 
-const dbstring = process.env.DBSTING || 'mongodb+srv://Ruben:lXs4sIXATIdXdemr@home-cp0vu.mongodb.net/test?retryWrites=true&w=majority';
-const dbname = process.env.DBNAME || 'matcha';
+const dbstring = process.env.DBSTING;
+const dbname = process.env.DBNAME;
 
 // Get Posts
 router.get('/', async (req, res) => {
